@@ -1,0 +1,87 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>26728471-b3d5-4335-9eb6-47d723f618ca</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>ml\eval_buy_de000a14uww2.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>finance-analytics</Name>
+    <RootNamespace>finance-analytics</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <PublishUrl>\\S68-app\Dienste\finance-analytics</PublishUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="backfill.py" />
+    <Compile Include="db_connection.py" />
+    <Compile Include="ml\build_labels_buy_de000a14uww2.py" />
+    <Compile Include="ml\eval_buy_de000a14uww2.py" />
+    <Compile Include="ml\label_builder.py" />
+    <Compile Include="ml\save_model.py" />
+    <Compile Include="ml\score_buy_de000a14uww2.py" />
+    <Compile Include="ml\score_daily_EVTL_OBSOLETE.py" />
+    <Compile Include="ml\score_daily_ml.py" />
+    <Compile Include="ml\train_buy_de000a14uww2.py" />
+    <Compile Include="ml\train_ml_invest.py" />
+    <Compile Include="scripts\agg_buy_de000a14uww2.py" />
+    <Compile Include="scripts\agg_validation_starter.py" />
+    <Compile Include="scripts\alerts.py" />
+    <Compile Include="scripts\backfill_agg.py" />
+    <Compile Include="scripts\backfill_update_kennzahlen.py" />
+    <Compile Include="scripts\fa_diag_agent.py" />
+    <Compile Include="scripts\fill_leads.py" />
+    <Compile Include="scripts\invest_bereitschaft.py" />
+    <Compile Include="scripts\qc_buy_daily_de000a14uww2.py" />
+    <Compile Include="scripts\qc_monitor.py" />
+    <Compile Include="scripts\run_buy_pipeline_de000a14uww2.py" />
+    <Compile Include="scripts\run_pipeline.py" />
+    <Compile Include="scripts\scoring.py" />
+    <Compile Include="scripts\segmentierung.py" />
+    <Compile Include="scripts\update_kennzahlen.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ml\" />
+    <Folder Include="sql\" />
+    <Folder Include="scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".env" />
+    <Content Include=".gitignore" />
+    <Content Include="deploy.bat" />
+    <Content Include="deploy_lokal.bat" />
+    <Content Include="ml\importances.csv" />
+    <Content Include="ml\metrics.json" />
+    <Content Include="ml\model_invest.pkl" />
+    <Content Include="ml\readme_buy_de000a14uww2.txt" />
+    <Content Include="ml\readme_invest.txt" />
+    <Content Include="ml\run_labels_invest.bat" />
+    <Content Include="readme.txt" />
+    <Content Include="requirements.txt" />
+    <Content Include="run_pipeline.bat" />
+    <Content Include="sql\check_labels_de000a14uww2.sql" />
+    <Content Include="sql\monitoring_labels_de000a14uww2.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

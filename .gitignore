@@ -1,0 +1,81 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+env/
+venv/
+ENV/
+*.env
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+.DS_Store
+Thumbs.db
+
+# --- Visual Studio / C# ---
+# Build results
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.appx
+*.appxupload
+*.vsix
+*.msi
+*.msm
+*.msp
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+*.log
+
+# Visual Studio folders
+.vs/
+.vscode/
+
+# NuGet packages
+*.nupkg
+packages/
+# Uncomment if using NuGet Package Restore
+#**/packages/*
+
+# Resharper files
+_ReSharper*/
+*.DotSettings.user
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Entity Framework Migrations
+migrations/
+
+# Other
+*.bak
+*.swp
+
+# --- TFS/Source Control ---
+$tf/
+*.vssscc
+*.vspscc
+
+# --- OS specific ---
+.DS_Store
+Thumbs.db
+
+# --- Test, coverage, reports ---
+test-results/
+coverage/
+*.coverage
+*.coveragexml
+*.TestResults
+
+# --- Python virtual environments ---
+.pip/
+.venv/

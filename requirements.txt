@@ -1,0 +1,9 @@
+pandas>=2.1
+numpy>=1.26
+SQLAlchemy>=2.0
+pyodbc>=5.0
+python-dateutil>=2.9
+python-dotenv
+scikit-learn
+joblib
+xgboost
