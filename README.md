@@ -1,4 +1,4 @@
-First-Buy ML Pipeline
+First-Investments ML Pipeline
 
 Goal: End-to-end pipeline to predict the probability of a first investment for a fund (T = 7/14/30 days) before the first relevant purchase (“Pre-First-Target”).
 Daily batch: Aggregation → Labels → Training (ad hoc) → Scoring → Monitoring.
